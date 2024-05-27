@@ -1,109 +1,33 @@
-# 👾 Back-End challenge - Graphql API
-This is a quick coding challenge we designed to assess your qualifications as a potential back-end developer. It's important to note that this is by no means a test. We just want to get a sense of how you write code and solve problems.
+# 👾 Back-End challenge - Graphql API - Concluido
+Gostei muito da experiência de ter feito esse desafio, foi um pouco desafiador mas apendi bastante... Com o tempo vou fazer melhorias no meu projeto implementar um CRUD mais completo. Acredito que seja um bom código
 
-## Getting started
-To get started with this challenge: 
-1) Fork this repository.
-2) Create a branch with the name: ``yourlevel-yourname``, example: ``JR-jhondoe``
-3) When you finish, make a pull request with name ``yourname``, example ``Jhon Doe`` and comment with your level (JR/PL/SR).
+## Instruções
 
-## The Challenge
-We'll be looking for **simple, well-designed and tested(only PL/SR)** code in the submission.
+### Configuração
 
-Please include a ``INSTRUCTIONS.md``:
-- Setup instructions
-- How did you decide which technologies to use as part of your solution
-- Are there any improvements you could make to your submission
-- What would you do differently if you were allocated more time
+1. Clone o repositório.
+2. Execute `npm install` para instalar as dependências.
+3. Configure uma base de dados MySQL e actualize o ficheiro `ormconfig.json` com as suas credenciais de base de dados.
+4. Execute `npm start` para iniciar o servidor.
+5. Use o GraphQL Playground em `http://localhost:4000/graphql` para interagir com a API.
 
-## Details
-- Create a Node Graphql API based on the queries and mutations below.
-- Feel free to choose the way that you will pass the input data (queries and mutations)
-- Use your creativity to improve what you want.
+### Tecnologias usadas
 
-### Queries
-#### Projects: List all projects
-<details><summary>Query Details</summary>
+- Node.js
+- TypeScript
+- GraphQL
+- Servidor Apollo
+- TypeORM
+- MySQL
 
-<p>
-  
-```graphql
-query projects {
-  id
-  name
-  price
-  user {
-    id
-    name
-    email
-  }
-}
-```
+### Melhorias
 
-</p>
-</details>
+- Implementar melhor tratamento de erros.
 
-#### Users: List all users
-<details><summary>Query Details</summary>
+### Se eu tivesse mais tempo
 
-<p>
-  
-```graphql
-query users {
-  id
-  name
-  email
-}
-```
+* Adicionar mais recursos à API.
+* Como elemetos do `Deletar, Editar, Mais formas de pesquisa`
+* etc.
 
-</p>
-</details>
 
-### Mutations
-#### CreateUser: create a user
-<details><summary>Mutation Details</summary>
-
-<p>
-  
-```graphql
-mutation createUser {
-  id
-  name
-  email
-}
-```
-
-</p>
-</details>
-
-#### CreateProject: create a project
-<details><summary>Mutation Details</summary>
-
-<p>
-  
-```graphql
-mutation createProject {
-  id
-  name
-  email
-  user {
-    id
-    name
-    email
-  }
-}
-```
-
-</p>
-</details>
-
-## Required
-- Node,Typescript and Graphql with a DB of your choose.
-- Migrations
-- Pagination and Filters (example: by ID and name)
-- TDD (only PL/SR)
-
-## Desirable
-- Apollo
-- Sequelize with MySQL
-- Clean Architecture, Design Patterns and SOLID
