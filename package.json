@@ -1,0 +1,29 @@
+{
+  "name": "pasta-teste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "ts-mocha 'test/**/*.test.ts'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "class-validator": "^0.14.1",
+    "express": "^4.19.2",
+    "graphql": "^16.8.1",
+    "mysql2": "^3.9.8",
+    "reflect-metadata": "^0.2.2",
+    "type-graphql": "^2.0.0-rc.1",
+    "typeorm": "^0.3.20"
+  }
+}
